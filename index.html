@@ -13,29 +13,37 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+
+
+<section class="top">
+  <!--INTRO-->
+  <section class="intro container">
+    <div class="logo"></div>
+    <h1>Body Mass Index Calculator</h1>
+    <p>Better understand your weight in relation to your height using our 
+      body mass index (BM) calculator. While BMI is not the sole determinant 
+      of a healthy weight, it offers a valuable starting point to evaluate 
+      your overall health and well-being.</p>
+  </section>
+  <!--CALCULATOR-->
   <section class="container calculator">
     <h1>Enter your details below</h1>
     <div class="checkbox__section container">
       <div class="row">
-
         <div class="form-check col">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="metric__radio" checked>
           <label class="form-check-label" for="metric__radio">
             Metric
           </label>
         </div>
-
-
         <div class="form-check col">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="imperial__radio">
           <label class="form-check-label" for="imperial__radio">
             Imperial
           </label>
         </div>
-
       </div> 
     </div>
-
     <div class="container input__section" id="metric__input">
       <div class="label__and_input mb-3">
         <label for="basic-url" class="form-label">Height</label>
@@ -44,7 +52,6 @@
           <span class="input-group-text">cm</span>
         </div>
       </div>
-
       <div class="label__and_input mb-3">
         <label for="basic-url" class="form-label">Weight</label>
         <div class="input-group">
@@ -53,7 +60,6 @@
         </div>
       </div>
     </div>
-
     <div class="container input__section" id="imperial__input">
       <div class="row">
         <label for="basic-url" class="form-label">Height</label>
@@ -78,8 +84,7 @@
         </div>
       </div>
     </div>
-
-  
+    <!--RESULT-->
     <div class="container results__section" id="results__section">
       <div class="row">
         <div class="col-sm result__div">
@@ -99,7 +104,7 @@
         </div>
       </div>
     </div>
-
+    <!--WELCOME-->
     <div class="container welcome__section" id="welcome__section">
       <div class="row">
         <div class="col">
@@ -112,5 +117,29 @@
 
 
   </section>
+  <div class="curved__line"></div>
+</section>
+<section class="container what__results__mean">
+  <div class="row">
+    <div class="col-sm">
+      <div class="man__eating"></div>
+    </div>
+    <div class="col-sm">
+      <div class="result__means">
+        <h3>What your BMI result means</h3>
+        <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
+          healthy weight may lower your chances of experiencing health issues later on, 
+          such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
+          fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
+          strive for regular physical activity, ideally about 30 minutes daily for 
+          five days a week.</p>
+      </div>
+    </div>
+  </div>
+  
+</section>
+  
+  
+
 </body>
 </html>

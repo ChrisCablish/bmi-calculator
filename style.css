@@ -4,12 +4,27 @@
     box-sizing: border-box;
 }
 
-.results__section {
-    display: none;
+.logo {
+    background-image: url(/assets/images/logo.svg);
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
 }
 
-.welcome__section {
-    display: block;
+.curved__line {
+    background-image: url(/assets/images/pattern-curved-line-left.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 8rem;
+    width: 8rem;
+}
+
+.man__eating {
+    background-image: url(/assets/images/image-man-eating.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: auto;
 }
 
 
