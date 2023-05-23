@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.results__section {
+    display: none;
+}
+
+.welcome__section {
+    display: block;
+}
 
 
  
