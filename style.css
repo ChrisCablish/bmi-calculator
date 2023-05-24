@@ -27,6 +27,103 @@
     width: auto;
 }
 
+/* WHAT TO DO ICONS */
 
- 
+.do__icon {
+    height: 3rem;
+    width: 3rem;
+}
 
+.eat__icon {
+    background-image: url(/assets/images/icon-eating.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.exercise__icon {
+    background-image: url(/assets/images/icon-exercise.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sleep__icon {
+    background-image: url(/assets/images/icon-sleep.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.limit__col {
+    border: 1px solid black;
+}
+
+/* LIMITATIONS ICONS */
+
+.limit__icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.gender__icon {
+    background-image: url(/assets/images/icon-gender.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.age__icon {
+    background-image: url(/assets/images/icon-age.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.muscle__icon {
+    background-image: url(/assets/images/icon-muscle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pregnancy__icon {
+    background-image: url(/assets/images/icon-pregnancy.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.race__icon {
+    background-image: url(/assets/images/icon-race.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* CURVED LINE RIGHT */
+.line__container {
+    display: none;  
+}
+
+
+/* MEDIUM BREAKPOINT */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .lgsm__limitations {
+        display: none;
+    }
+  }
+  
+
+/* LARGE BREAKPOINT */
+
+@media (min-width: 992px) {
+
+    /* CURVED LINE RIGHT */
+    .line__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .curved__line__right {
+        height: 60%;
+        width: auto;
+    }
+  }
+  

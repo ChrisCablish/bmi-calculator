@@ -33,6 +33,7 @@ const welcomeSection = document.getElementById('welcome__section');
 
 
 //---------------functions--------------
+
 const handleRadioChange = () => {
     clearTextInputs()
     resultsDisplayOff();
@@ -200,7 +201,7 @@ allForms.forEach((input) => {
 
 
 
-
+ 
 
 
 
