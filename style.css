@@ -52,8 +52,6 @@
     background-repeat: no-repeat;
 }
 
-
-
 .limit__col {
     border: 1px solid black;
 }
@@ -101,6 +99,10 @@
     display: none;  
 }
 
+.md__limitations {
+    display: none;
+}
+
 
 /* MEDIUM BREAKPOINT */
 
@@ -108,12 +110,21 @@
     .lgsm__limitations {
         display: none;
     }
+
+    .md__limitations {
+        display: block;
+    }
+
   }
   
 
 /* LARGE BREAKPOINT */
 
 @media (min-width: 992px) {
+
+    .md__limitations {
+        display: none;
+    }
 
     /* CURVED LINE RIGHT */
     .line__container {
