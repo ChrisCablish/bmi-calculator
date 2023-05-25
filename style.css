@@ -1,140 +1,184 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; }
 
 .logo {
-    background-image: url(/assets/images/logo.svg);
-    background-size: contain;
-    height: 3rem;
-    width: 3rem;
-}
+  background-image: url(/assets/images/logo.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto; }
+
+section.intro {
+  text-align: center; }
+
+section.intro h1 {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 48px; }
+
+section.intro p {
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 16px; }
+
+.welcome__div h2 {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 24px; }
+
+.welcome__div p {
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 14px; }
+
+section.calculator h1 {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 24px; }
+
+span.result {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 48px; }
+
+.result__expl p,
+.result__div p {
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 14px; }
+
+.result__div {
+  display: flex;
+  flex-direction: column; }
 
 .curved__line {
-    background-image: url(/assets/images/pattern-curved-line-left.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 8rem;
-    width: 8rem;
-}
+  background-image: url(/assets/images/pattern-curved-line-left.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8rem;
+  width: 8rem; }
 
 .man__eating {
-    background-image: url(/assets/images/image-man-eating.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 10rem;
-    width: auto;
-}
+  background-image: url(/assets/images/image-man-eating.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10rem;
+  width: auto; }
 
-/* WHAT TO DO ICONS */
+.result__means h3 {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 32px; }
+
+.result__means p {
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 16px; }
 
 .do__icon {
-    height: 3rem;
-    width: 3rem;
-}
+  height: 3rem;
+  width: 3rem; }
 
 .eat__icon {
-    background-image: url(/assets/images/icon-eating.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-eating.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .exercise__icon {
-    background-image: url(/assets/images/icon-exercise.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-exercise.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .sleep__icon {
-    background-image: url(/assets/images/icon-sleep.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-sleep.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .limit__col {
-    border: 1px solid black;
-}
+  border: 1px solid black; }
 
-/* LIMITATIONS ICONS */
+.chunk__text h4 {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 24px; }
+
+.chunk__text p {
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 16px; }
+
+.limit__col h4 {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 32px; }
+
+.limit__col p {
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 16px; }
+
+.head__and__icon h5 {
+  line-height: 110%;
+  font-weight: 600;
+  font-size: 20px; }
 
 .limit__icon {
-    height: 2rem;
-    width: 2rem;
-}
+  height: 2rem;
+  width: 2rem; }
 
 .gender__icon {
-    background-image: url(/assets/images/icon-gender.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-gender.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .age__icon {
-    background-image: url(/assets/images/icon-age.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-age.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .muscle__icon {
-    background-image: url(/assets/images/icon-muscle.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-muscle.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .pregnancy__icon {
-    background-image: url(/assets/images/icon-pregnancy.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-pregnancy.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .race__icon {
-    background-image: url(/assets/images/icon-race.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+  background-image: url(/assets/images/icon-race.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
-
-/* CURVED LINE RIGHT */
 .line__container {
-    display: none;  
-}
+  display: none; }
 
 .md__limitations {
-    display: none;
-}
-
+  display: none; }
 
 /* MEDIUM BREAKPOINT */
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .lgsm__limitations {
-        display: none;
-    }
+  .lgsm__limitations {
+    display: none; }
 
-    .md__limitations {
-        display: block;
-    }
-
-  }
-  
-
+  .md__limitations {
+    display: block; } }
 /* LARGE BREAKPOINT */
-
 @media (min-width: 992px) {
+  .md__limitations {
+    display: none; }
 
-    .md__limitations {
-        display: none;
-    }
+  /* CURVED LINE RIGHT */
+  .line__container {
+    display: flex;
+    justify-content: center; }
 
-    /* CURVED LINE RIGHT */
-    .line__container {
-        display: flex;
-        justify-content: center;
-    }
+  .curved__line__right {
+    height: 60%;
+    width: auto; } }
 
-    .curved__line__right {
-        height: 60%;
-        width: auto;
-    }
-  }
-  
+/*# sourceMappingURL=style.css.map */
