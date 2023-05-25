@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+  color: #253347; }
+
+p {
+  color: #5E6E85; }
 
 .logo {
   background-image: url(/assets/images/logo.svg);
@@ -12,7 +16,8 @@
   margin: 0 auto; }
 
 section.intro {
-  text-align: center; }
+  text-align: center;
+  background-image: linear-gradient(290.1deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%); }
 
 section.intro h1 {
   line-height: 110%;
@@ -24,31 +29,50 @@ section.intro p {
   font-weight: 400;
   font-size: 16px; }
 
+.welcome__div {
+  background-color: #345FF6; }
+
 .welcome__div h2 {
   line-height: 110%;
   font-weight: 600;
-  font-size: 24px; }
+  font-size: 24px;
+  color: #FFFFFF; }
 
 .welcome__div p {
   line-height: 150%;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #FFFFFF; }
 
 section.calculator h1 {
   line-height: 110%;
   font-weight: 600;
   font-size: 24px; }
 
+.results__section {
+  background-color: #345FF6; }
+
 span.result {
   line-height: 110%;
   font-weight: 600;
-  font-size: 48px; }
+  font-size: 48px;
+  color: #FFFFFF; }
 
 .result__expl p,
 .result__div p {
   line-height: 150%;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #FFFFFF; }
+
+span.recommendation {
+  color: white; }
+
+.range {
+  line-height: 150%;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF; }
 
 .result__div {
   display: flex;
@@ -97,6 +121,9 @@ span.result {
   background-size: contain;
   background-repeat: no-repeat; }
 
+.what__to__do {
+  background-image: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%); }
+
 .limit__col {
   border: 1px solid black; }
 
@@ -109,6 +136,9 @@ span.result {
   line-height: 150%;
   font-weight: 400;
   font-size: 16px; }
+
+.limit__factor {
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25); }
 
 .limit__col h4 {
   line-height: 110%;

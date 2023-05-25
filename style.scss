@@ -38,12 +38,33 @@ $bodyS: (
     line-height:150%
 );
 
+
+//----------colors-----------
+
+$blue: #345FF6;
+$gun__metal: #253347;
+$electric__blue: #5E6E85;
+$borders: #D8E2E7;
+$white: #FFFFFF;
+$background__gradient: linear-gradient(290.1deg, rgba(214, 230, 254, 1) 0%, rgba(214, 252, 254, 0) 100%);
+$slight__gradient: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
+
+//----------effects----------
+
+$box__shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+
+
 //-----------global-----------
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $font-family;
+    color: $gun__metal;
+}
+
+p {
+    color: $electric__blue;
 }
 
 //-----------intro-----------
@@ -58,6 +79,7 @@ $bodyS: (
 
 section.intro {
     text-align: center;
+    background-image: $background__gradient;
 }
 
 section.intro h1 {
@@ -74,16 +96,22 @@ section.intro p {
 
 //----------welcome-----------
 
+.welcome__div {
+    background-color: $blue;
+}
+
 .welcome__div h2 {
     line-height: map-get($heading, line-height);
     font-weight: map-get($heading, font-weight);
     font-size: map-get($heading-m, font-size);
+    color: $white;
 }
 
 .welcome__div p {
     line-height: map-get($bodyS, line-height);
     font-weight: map-get($bodyS, font-weight);
     font-size: map-get($bodyS, font-size);
+    color: $white;
 }
 
 //------------calc------------
@@ -94,10 +122,15 @@ section.calculator h1 {
     font-size: map-get($heading-m, font-size);
 }
 
+.results__section {
+    background-color: $blue;
+}
+
 span.result {
     line-height: map-get($heading, line-height);
     font-weight: map-get($heading, font-weight);
     font-size: map-get($heading-l, font-size);
+    color: $white;
 }
 
 .result__expl p,
@@ -105,6 +138,18 @@ span.result {
     line-height: map-get($bodyS, line-height);
     font-weight: map-get($bodyS, font-weight);
     font-size: map-get($bodyS, font-size);
+    color: $white;
+}
+
+span.recommendation {
+    color: white;
+}
+
+.range {
+    line-height: map-get($bodyMBold, line-height);
+    font-weight: map-get($bodyMBold, font-weight);
+    font-size: map-get($bodyMBold, font-size);
+    color: $white;
 }
 
 .result__div {
@@ -147,7 +192,6 @@ span.result {
 //-------------what to do------------
 
 //icons
-
 .do__icon {
     height: 3rem;
     width: 3rem;
@@ -171,6 +215,13 @@ span.result {
     background-repeat: no-repeat;
 }
 
+.what__to__do {
+    background-image: $slight__gradient;
+} 
+
+
+//----------limitations of bmi----------
+
 .limit__col {
     border: 1px solid black;
 }
@@ -187,9 +238,12 @@ span.result {
     font-size: map-get($bodyM, font-size);
 }
 
-//----------limitations of bmi----------
 
 // limitations icons
+
+.limit__factor {
+    box-shadow: $box__shadow;
+}
 
 .limit__col h4 {
     line-height: map-get($heading, line-height);
