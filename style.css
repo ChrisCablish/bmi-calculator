@@ -15,6 +15,9 @@ body {
   align-items: center;
   min-height: 100vh; }
 
+section.top {
+  position: relative; }
+
 section.intro {
   padding: 33px 24px 24px 24px;
   text-align: center;
@@ -140,59 +143,59 @@ section.calculator {
   background-size: contain;
   background-repeat: no-repeat;
   height: 8rem;
-  width: 8rem; }
+  width: 8rem;
+  display: none; }
 
-.man__eating {
-  background-image: url(/assets/images/image-man-eating.webp);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 10rem;
-  width: auto; }
-
-.result__means h3 {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 32px; }
-
-.result__means p {
-  line-height: 150%;
-  font-weight: 400;
-  font-size: 16px; }
-
-.do__icon {
-  height: 3rem;
-  width: 3rem; }
-
-.eat__icon {
-  background-image: url(/assets/images/icon-eating.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.exercise__icon {
-  background-image: url(/assets/images/icon-exercise.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.sleep__icon {
-  background-image: url(/assets/images/icon-sleep.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
+.what__results__mean {
+  padding: 0; }
+  .what__results__mean .man__eating {
+    background-image: url(/assets/images/image-man-eating.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 375px;
+    min-width: 100%; }
+  .what__results__mean .result__means {
+    padding: 48px 24px 74px 24px; }
+    .what__results__mean .result__means h3 {
+      line-height: 110%;
+      font-weight: 600;
+      font-size: 32px; }
+    .what__results__mean .result__means p {
+      line-height: 150%;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0; }
 
 .what__to__do {
-  background-image: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%); }
-
-.limit__col {
-  border: 1px solid black; }
-
-.chunk__text h4 {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 24px; }
-
-.chunk__text p {
-  line-height: 150%;
-  font-weight: 400;
-  font-size: 16px; }
+  background-image: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
+  padding: 56px 28px 56px 19px; }
+  .what__to__do .do__chunk .do__icon {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 32px; }
+  .what__to__do .do__chunk .eat__icon {
+    background-image: url(/assets/images/icon-eating.svg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .what__to__do .do__chunk .exercise__icon {
+    background-image: url(/assets/images/icon-exercise.svg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .what__to__do .do__chunk .sleep__icon {
+    background-image: url(/assets/images/icon-sleep.svg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .what__to__do .do__chunk .chunk__text h4 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 32px; }
+  .what__to__do .do__chunk .chunk__text p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px; }
 
 .limit__factor {
   box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25); }

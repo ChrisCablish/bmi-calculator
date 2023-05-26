@@ -39,7 +39,7 @@ $bodyS: (
 );
 
 
-//----------colors-----------
+//colors
 
 $blue: #345FF6;
 $gun__metal: #253347;
@@ -78,7 +78,9 @@ body {
 
 //-----------intro-----------
 
-
+section.top {
+    position: relative;
+}
 
 section.intro {
     padding: 33px 24px 24px 24px;
@@ -115,7 +117,6 @@ section.intro {
         font-size: map-get($bodyM, font-size);
     }
 }
-
 
 //------------calc------------
 
@@ -265,80 +266,108 @@ section.calculator {
     background-repeat: no-repeat;
     height: 8rem;
     width: 8rem;
+    display: none;
 }
 
 //------------results means-----------
 
-.man__eating {
-    background-image: url(/assets/images/image-man-eating.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 10rem;
-    width: auto;
-}
+.what__results__mean {
+    padding: 0;
 
-.result__means h3 {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: 32px;
-}
+    .man__eating {
+        background-image: url(/assets/images/image-man-eating.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 375px;
+        min-width: 100%;
+    }
 
-.result__means p {
-    line-height: map-get($bodyM, line-height);
-    font-weight: map-get($bodyM, font-weight);
-    font-size: map-get($bodyM, font-size);
+    .result__means {
+        padding: 48px 24px 74px 24px;
+
+        h3 {
+            line-height: map-get($heading, line-height);
+            font-weight: map-get($heading, font-weight);
+            font-size: 32px;
+        }
+
+        p {
+            line-height: map-get($bodyM, line-height);
+            font-weight: map-get($bodyM, font-weight);
+            font-size: map-get($bodyM, font-size);
+            margin: 0;
+        }
+    }
 }
 
 
 
 //-------------what to do------------
 
-//icons
-.do__icon {
-    height: 3rem;
-    width: 3rem;
-}
-
-.eat__icon {
-    background-image: url(/assets/images/icon-eating.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.exercise__icon {
-    background-image: url(/assets/images/icon-exercise.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.sleep__icon {
-    background-image: url(/assets/images/icon-sleep.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .what__to__do {
     background-image: $slight__gradient;
+    padding: 56px 28px 56px 19px;
+
+    .do__chunk {
+
+        //icons
+        .do__icon {
+            height: 3rem;
+            width: 3rem;
+            margin-bottom: 32px;
+        }
+
+        .eat__icon {
+            background-image: url(/assets/images/icon-eating.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .exercise__icon {
+            background-image: url(/assets/images/icon-exercise.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .sleep__icon {
+            background-image: url(/assets/images/icon-sleep.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .chunk__text {
+
+            h4 {
+                line-height: map-get($heading, line-height);
+                font-weight: map-get($heading, font-weight);
+                font-size: map-get($heading-m, font-size);
+                margin-bottom: 32px;
+            }
+
+            p {
+                line-height: map-get($bodyM, line-height);
+                font-weight: map-get($bodyM, font-weight);
+                font-size: map-get($bodyM, font-size);
+                margin-bottom: 40px;
+            }
+
+        }
+
+    }
+
+
 } 
+
 
 
 //----------limitations of bmi----------
 
 .limit__col {
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
-.chunk__text h4 {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: map-get($heading-m, font-size);
-}
 
-.chunk__text p {
-    line-height: map-get($bodyM, line-height);
-    font-weight: map-get($bodyM, font-weight);
-    font-size: map-get($bodyM, font-size);
-}
 
 
 // limitations icons
