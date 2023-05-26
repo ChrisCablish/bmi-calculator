@@ -1,70 +1,32 @@
-Body Mass Index Calculator
+To use Sass in your project and implement the provided design more efficiently, follow these step-by-step instructions:
 
-  Better understand your weight in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
+Step 1: Install Sass
 
-  Enter your details below
+Make sure you have Node.js installed on your computer.
+Open your command line or terminal.
+Run the following command to install Sass globally: npm install -g sass
+Step 2: Create a Sass file
 
-  Metric
-  Imperial
+Create a new file in your project directory and name it style.scss.
+Copy the content of your existing style.css file into this new style.scss file.
+Delete the original style.css file (we'll generate a new CSS file from Sass).
+Step 3: Import Bootstrap in your Sass file
 
-  Height
-  Weight
+Open the style.scss file.
+At the top of the file, import Bootstrap by adding the following line:
+@import 'path/to/bootstrap'; (Replace 'path/to/bootstrap' with the actual path to your Bootstrap CSS file)
+Step 4: Compile Sass to CSS
 
-  Your BMI is...
+In your command line or terminal, navigate to your project directory.
+Run the following command to compile your Sass file to CSS:
+sass style.scss style.css
+Step 5: Link the compiled CSS file in your HTML
 
-  <!-- add score -->
+Replace the existing link to style.css in your HTML file with the following:
+<link rel="stylesheet" href="style.css">
+Step 6: Verify everything is working
 
-  Your BMI suggests you're <!-- add classification -->. 
-  Your ideal weight is between <!-- add range -->.
+Open your HTML file in a web browser and ensure that the styles are applied correctly.
+At this point, your project should be set up to use Sass alongside Bootstrap. You can now make use of Sass features like variables, mixins, and nesting to write cleaner and more maintainable CSS code. Remember to recompile the Sass file to CSS every time you make changes to your style.scss file.
 
-  What your BMI result means
-
-  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
-  healthy weight may lower your chances of experiencing health issues later on, 
-  such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
-  fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
-  strive for regular physical activity, ideally about 30 minutes daily for 
-  five days a week.
-
-  Healthy eating
-  Healthy eating promotes weight control, disease prevention, better digestion, 
-  immunity, mental clarity, and mood.
-
-  Regular exercise
-  Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
-  risk, fostering wellness and longevity.
-
-  Adequate sleep
-  Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
-  overall restoration and rejuvenation.
-
-  Limitations of BMI
-
-  Although BMI is often a practical indicator of healthy weight, it is not suited for 
-  every person. Specific groups should carefully consider their BMI outcomes, and in 
-  certain cases, the measurement may not be beneficial to use.
-
-  Gender
-  The development and body fat composition of girls and boys vary with age. Consequently, 
-  a child's age and gender are considered when evaluating their BMI.
-
-  Age
-  In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
-  body fat content.
-
-  Muscle
-  BMI may misclassify muscular individuals as overweight or obese, as it doesn't 
-  differentiate muscle from fat.
-
-  Pregnancy
-  Expectant mothers experience weight gain due to their growing baby. Maintaining a 
-  healthy pre-pregnancy BMI is advisable to minimise health risks for both mother 
-  and child.
-
-  Race
-  Certain health concerns may affect individuals of some Black and Asian origins at 
-  lower BMIs than others. To learn more, it is advised to discuss this with your 
-  GP or practice nurse. 
+If you have any specific styling requirements from the provided design, please let me know, and I can guide you further on how to implement them using Sass.

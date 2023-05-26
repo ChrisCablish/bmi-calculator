@@ -8,75 +8,132 @@
 p {
   color: #5E6E85; }
 
-.logo {
-  background-image: url(/assets/images/logo.svg);
-  background-size: contain;
-  height: 3rem;
-  width: 3rem;
-  margin: 0 auto; }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
 
 section.intro {
+  padding: 33px 24px 24px 24px;
   text-align: center;
-  background-image: linear-gradient(290.1deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%); }
+  background-image: linear-gradient(290.1deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  section.intro .logo {
+    background-image: url(/assets/images/logo.svg);
+    background-size: contain;
+    height: 40px;
+    width: 40px; }
+  section.intro * {
+    margin-bottom: 24px; }
+  section.intro h1 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 48px; }
+  section.intro p {
+    margin-bottom: 10rem;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px; }
 
-section.intro h1 {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 48px; }
-
-section.intro p {
-  line-height: 150%;
-  font-weight: 400;
-  font-size: 16px; }
-
-.welcome__div {
-  background-color: #345FF6; }
-
-.welcome__div h2 {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 24px;
-  color: #FFFFFF; }
-
-.welcome__div p {
-  line-height: 150%;
-  font-weight: 400;
-  font-size: 14px;
-  color: #FFFFFF; }
-
-section.calculator h1 {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 24px; }
+section.calculator {
+  width: auto;
+  padding: 24px;
+  margin: 0 24px 0 24px;
+  border-radius: 1rem;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  position: relative;
+  top: -9rem;
+  background-color: #FFFFFF; }
+  section.calculator h1 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center; }
+  section.calculator .form-check {
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center; }
+    section.calculator .form-check .form-check-input {
+      height: 31px;
+      width: 31px; }
+  section.calculator .input__row {
+    display: flex;
+    gap: 16px; }
+  section.calculator .input-group {
+    outline: 1px solid #D8E2E7;
+    border-radius: 1rem;
+    overflow: hidden; }
+    section.calculator .input-group .form-control {
+      padding: 20px 0 20px 20px;
+      font-size: 24px;
+      font-weight: 600;
+      border: none; }
+    section.calculator .input-group .input-group-text {
+      font-size: 24px;
+      font-weight: 600;
+      padding-right: 24px;
+      color: #345FF6;
+      background-color: transparent;
+      border: none; }
 
 .results__section {
-  background-color: #345FF6; }
+  background-color: #345FF6;
+  padding: 32px;
+  border-radius: 1.5rem; }
+  .results__section .result__div {
+    gap: 8px;
+    display: flex;
+    flex-direction: column; }
+    .results__section .result__div p {
+      margin-bottom: 0;
+      color: #FFFFFF;
+      line-height: 150%;
+      font-weight: 600;
+      font-size: 16px; }
+    .results__section .result__div span {
+      line-height: 110%;
+      font-weight: 600;
+      font-size: 48px;
+      color: #FFFFFF; }
+  .results__section .result__expl p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 0; }
+    .results__section .result__expl p span.recommendation {
+      color: white; }
+    .results__section .result__expl p span.range {
+      line-height: 150%;
+      font-weight: 600;
+      font-size: 16px;
+      color: #FFFFFF; }
 
-span.result {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 48px;
-  color: #FFFFFF; }
-
-.result__expl p,
-.result__div p {
-  line-height: 150%;
-  font-weight: 400;
-  font-size: 14px;
-  color: #FFFFFF; }
-
-span.recommendation {
-  color: white; }
-
-.range {
-  line-height: 150%;
-  font-weight: 600;
-  font-size: 16px;
-  color: #FFFFFF; }
-
-.result__div {
-  display: flex;
-  flex-direction: column; }
+.welcome__div {
+  background-color: #345FF6;
+  padding: 32px;
+  border-radius: 1.5rem; }
+  .welcome__div h2 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF; }
+  .welcome__div p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF; }
 
 .curved__line {
   background-image: url(/assets/images/pattern-curved-line-left.svg);

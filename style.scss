@@ -67,94 +67,196 @@ p {
     color: $electric__blue;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
 //-----------intro-----------
 
-.logo {
-    background-image: url(/assets/images/logo.svg);
-    background-size: contain;
-    height: 3rem;
-    width: 3rem;
-    margin: 0 auto;
-}
+
 
 section.intro {
+    padding: 33px 24px 24px 24px;
     text-align: center;
     background-image: $background__gradient;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+        background-image: url(/assets/images/logo.svg);
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+        // margin: 0 auto;
+    }
+
+    & * {
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        line-height: map-get($heading, line-height);
+        font-weight: map-get($heading, font-weight);
+        font-size: map-get($heading-l, font-size);
+    }
+
+    p {
+        margin-bottom: 10rem;
+        line-height: map-get($bodyM, line-height);
+        font-weight: map-get($bodyM, font-weight);
+        font-size: map-get($bodyM, font-size);
+    }
 }
 
-section.intro h1 {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: map-get($heading-l, font-size);
+
+//------------calc------------
+
+
+section.calculator {
+    width: auto;
+    padding: 24px;
+    margin: 0 24px 0 24px;
+    border-radius: 1rem;
+    box-shadow: $box__shadow;
+    //TESTING---------------
+    position: relative;
+    top: -9rem;
+    background-color: $white;
+
+    h1 {
+        line-height: map-get($heading, line-height);
+        font-weight: map-get($heading, font-weight);
+        font-size: map-get($heading-m, font-size);
+        text-align: center;
+    }
+
+    .form-check {
+        line-height: map-get($bodyMBold, line-height);
+        font-weight: map-get($bodyMBold, font-weight);
+        font-size: map-get($bodyMBold, font-size);
+        display: flex;
+        gap: 18px;
+        justify-content: center;
+        align-items: center;
+
+        //radios
+        .form-check-input {
+            height: 31px;
+            width: 31px;
+        }
+    }
+
+    .input__row { //for metric only, gap between inputs
+        display: flex;
+        gap: 16px;
+    }
+
+    .input-group {
+        outline: 1px solid $borders;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        //inputs
+        .form-control {
+            padding: 20px 0 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .input-group-text {
+            font-size: 24px;
+            font-weight: 600;
+            padding-right: 24px;
+            color: $blue;
+            background-color: transparent;
+            border: none;
+        }
+    }
+
 }
 
-section.intro p {
-    line-height: map-get($bodyM, line-height);
-    font-weight: map-get($bodyM, font-weight);
-    font-size: map-get($bodyM, font-size);
-}
+
+//results
+.results__section {
+    background-color: $blue;
+    padding: 32px;
+    border-radius: 1.5rem;
+
+    .result__div {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin-bottom: 0;
+            color: $white;
+            line-height: map-get($bodyMBold, line-height);
+            font-weight: map-get($bodyMBold, font-weight);
+            font-size: map-get($bodyMBold, font-size);
+        }
+
+        span {
+            line-height: map-get($heading, line-height);
+            font-weight: map-get($heading, font-weight);
+            font-size: map-get($heading-l, font-size);
+            color: $white;
+        }
+    }
+
+
+    .result__expl{
+
+        p {
+            line-height: map-get($bodyS, line-height);
+            font-weight: map-get($bodyS, font-weight);
+            font-size: map-get($bodyS, font-size);
+            color: $white;
+            margin-top: 24px;
+            margin-bottom: 0;
+
+            span.recommendation {
+                color: white;
+            }
+
+            span.range {
+                line-height: map-get($bodyMBold, line-height);
+                font-weight: map-get($bodyMBold, font-weight);
+                font-size: map-get($bodyMBold, font-size);
+                color: $white;
+            }
+        }
+    }
+} 
 
 //----------welcome-----------
 
 .welcome__div {
     background-color: $blue;
-}
+    padding: 32px;
+    border-radius: 1.5rem;
 
-.welcome__div h2 {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: map-get($heading-m, font-size);
-    color: $white;
-}
+    h2 {
+        line-height: map-get($heading, line-height);
+        font-weight: map-get($heading, font-weight);
+        font-size: map-get($heading-m, font-size);
+        color: $white;
+    }
 
-.welcome__div p {
-    line-height: map-get($bodyS, line-height);
-    font-weight: map-get($bodyS, font-weight);
-    font-size: map-get($bodyS, font-size);
-    color: $white;
-}
-
-//------------calc------------
-
-section.calculator h1 {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: map-get($heading-m, font-size);
-}
-
-.results__section {
-    background-color: $blue;
-}
-
-span.result {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: map-get($heading-l, font-size);
-    color: $white;
-}
-
-.result__expl p,
-.result__div p {
-    line-height: map-get($bodyS, line-height);
-    font-weight: map-get($bodyS, font-weight);
-    font-size: map-get($bodyS, font-size);
-    color: $white;
-}
-
-span.recommendation {
-    color: white;
-}
-
-.range {
-    line-height: map-get($bodyMBold, line-height);
-    font-weight: map-get($bodyMBold, font-weight);
-    font-size: map-get($bodyMBold, font-size);
-    color: $white;
-}
-
-.result__div {
-    display: flex;
-    flex-direction: column;
+    p {
+        line-height: map-get($bodyS, line-height);
+        font-weight: map-get($bodyS, font-weight);
+        font-size: map-get($bodyS, font-size);
+        color: $white;
+        }
 }
 
 .curved__line {
