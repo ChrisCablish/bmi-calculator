@@ -61,6 +61,7 @@ $box__shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
     box-sizing: border-box;
     font-family: $font-family;
     color: $gun__metal;
+    // overflow-x: hidden;
 }
 
 p {
@@ -73,6 +74,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    max-width: 100%;
+    
+    
 }
 
 
@@ -359,16 +363,17 @@ section.calculator {
 
 } 
 
-
-
 //----------limitations of bmi----------
 
-.limit__col {
-    // border: 1px solid black;
+
+.lgsm__limitations{
+    
 }
 
 
-
+.limit__col {
+    border: 1px solid black;
+}
 
 // limitations icons
 
