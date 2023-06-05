@@ -172,8 +172,8 @@ section.calculator {
   background-image: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
   padding: 56px 28px 56px 19px; }
   .what__to__do .do__chunk .do__icon {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     margin-bottom: 32px; }
   .what__to__do .do__chunk .eat__icon {
     background-image: url(/assets/images/icon-eating.svg);
