@@ -27,7 +27,7 @@ section.intro {
   flex-direction: column;
   align-items: center; }
   section.intro .logo {
-    background-image: url(/assets/images/logo.svg);
+    background-image: url(assets/images/logo.svg);
     background-size: contain;
     height: 40px;
     width: 40px; }
@@ -138,7 +138,7 @@ section.calculator {
     color: #FFFFFF; }
 
 .curved__line {
-  background-image: url(/assets/images/pattern-curved-line-left.svg);
+  background-image: url(assets/images/pattern-curved-line-left.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 8rem;
@@ -148,7 +148,7 @@ section.calculator {
 .what__results__mean {
   padding: 0; }
   .what__results__mean .man__eating {
-    background-image: url(/assets/images/image-man-eating.webp);
+    background-image: url(assets/images/image-man-eating.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -174,15 +174,15 @@ section.calculator {
     width: 4rem;
     margin-bottom: 32px; }
   .what__to__do .do__chunk .eat__icon {
-    background-image: url(/assets/images/icon-eating.svg);
+    background-image: url(assets/images/icon-eating.svg);
     background-size: contain;
     background-repeat: no-repeat; }
   .what__to__do .do__chunk .exercise__icon {
-    background-image: url(/assets/images/icon-exercise.svg);
+    background-image: url(assets/images/icon-exercise.svg);
     background-size: contain;
     background-repeat: no-repeat; }
   .what__to__do .do__chunk .sleep__icon {
-    background-image: url(/assets/images/icon-sleep.svg);
+    background-image: url(assets/images/icon-sleep.svg);
     background-size: contain;
     background-repeat: no-repeat; }
   .what__to__do .do__chunk .chunk__text h4 {

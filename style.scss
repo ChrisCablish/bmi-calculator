@@ -61,7 +61,6 @@ $box__shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
     box-sizing: border-box;
     font-family: $font-family;
     color: $gun__metal;
-    // overflow-x: hidden;
 }
 
 p {
@@ -71,8 +70,6 @@ p {
 body {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     min-height: 100vh;
     max-width: 100%;
     
@@ -97,7 +94,7 @@ section.intro {
     align-items: center;
 
     .logo {
-        background-image: url(/assets/images/logo.svg);
+        background-image: url(assets/images/logo.svg);
         background-size: contain;
         height: 40px;
         width: 40px;
@@ -265,7 +262,7 @@ section.calculator {
 }
 
 .curved__line {
-    background-image: url(/assets/images/pattern-curved-line-left.svg);
+    background-image: url(assets/images/pattern-curved-line-left.svg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 8rem;
@@ -279,7 +276,7 @@ section.calculator {
     padding: 0;
 
     .man__eating {
-        background-image: url(/assets/images/image-man-eating.webp);
+        background-image: url(assets/images/image-man-eating.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -322,19 +319,19 @@ section.calculator {
         }
 
         .eat__icon {
-            background-image: url(/assets/images/icon-eating.svg);
+            background-image: url(assets/images/icon-eating.svg);
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         .exercise__icon {
-            background-image: url(/assets/images/icon-exercise.svg);
+            background-image: url(assets/images/icon-exercise.svg);
             background-size: contain;
             background-repeat: no-repeat;
         }
 
         .sleep__icon {
-            background-image: url(/assets/images/icon-sleep.svg);
+            background-image: url(assets/images/icon-sleep.svg);
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -360,8 +357,6 @@ section.calculator {
     }
 
 } 
-
-
 
 /* MEDIUM BREAKPOINT */
 
@@ -411,12 +406,10 @@ section.calculator {
     }
 
     //what to do
-
     .what__to__do {
     
         background-image: $slight__gradient;
         padding: 56px 28px 56px 19px;
-        
         
         .do__chunk {
 
@@ -436,27 +429,18 @@ section.calculator {
     }
 
 }
-   
-
-  
 
 /* LARGE BREAKPOINT */
 
 @media (min-width: 992px) {
 
     section.top {
-        // position: relative;
     }
 
     section.intro {
-        // align-items: flex-start;
         padding: 77px 116px;
         max-width: 70%;
-        // margin-left: 0;
-        // justify-content: flex-start;
-        // 
-    
-        
+       
         .logo {
             margin-bottom: 100px;
             height: 4rem;
@@ -465,14 +449,13 @@ section.calculator {
 
         h1 {
             width: 50%;
-            // text-align: left;
+
             font-size: 64px;
-            // margin-bottom: 35px;
             
         }
 
         p {
-            // text-align: left;
+            
             width: 40%;
             margin-bottom: 150px;
         }
@@ -491,26 +474,11 @@ section.calculator {
         padding: 0;
         margin-bottom: 3rem;
 
-        .man__eating {
-            // background-image: url(/assets/images/image-man-eating.webp);
-            // background-size: contain;
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // height: 375px;
-            // min-width: 100%;
-        }
-
         .means {
             display: flex;
 
-
             .result__means {
-                // padding: 0;
-                // display: flex;
-                // flex-direction: column;
-                // align-items: center;
-                // justify-content: space-around
-
+            
                 h3 {
                     line-height: map-get($heading, line-height);
                     font-weight: map-get($heading, font-weight);
@@ -526,8 +494,6 @@ section.calculator {
             }
         }   
     }
-
-
 
   }
   
