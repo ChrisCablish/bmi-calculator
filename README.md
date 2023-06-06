@@ -15,3 +15,6 @@ This challage was created using the assets adn design from frontend mentor.
 - Bootstrap  
 - Vanilla Javascript  
 
+Live Site URL: https://chriscablish.github.io/bmi-calculator/  
+Repo URL: https://github.com/ChrisCablish/bmi-calculator
+
