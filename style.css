@@ -11,8 +11,6 @@ p {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   max-width: 100%; }
 
@@ -198,81 +196,86 @@ section.calculator {
     font-size: 16px;
     margin-bottom: 40px; }
 
-.limit__col {
-  border: 1px solid black; }
-
-.limit__factor {
-  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25); }
-
-.limit__col h4 {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 32px; }
-
-.limit__col p {
-  line-height: 150%;
-  font-weight: 400;
-  font-size: 16px; }
-
-.head__and__icon h5 {
-  line-height: 110%;
-  font-weight: 600;
-  font-size: 20px; }
-
-.limit__icon {
-  height: 2rem;
-  width: 2rem; }
-
-.gender__icon {
-  background-image: url(/assets/images/icon-gender.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.age__icon {
-  background-image: url(/assets/images/icon-age.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.muscle__icon {
-  background-image: url(/assets/images/icon-muscle.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.pregnancy__icon {
-  background-image: url(/assets/images/icon-pregnancy.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.race__icon {
-  background-image: url(/assets/images/icon-race.svg);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.line__container {
-  display: none; }
-
-.md__limitations {
-  display: none; }
-
 /* MEDIUM BREAKPOINT */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .lgsm__limitations {
-    display: none; }
+  .welcome__div {
+    background-color: #345FF6;
+    padding: 32px;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem; }
 
-  .md__limitations {
-    display: block; } }
+  .results__section {
+    background-color: #345FF6;
+    padding: 32px;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem; }
+    .results__section .result__expl {
+      display: flex;
+      align-items: center; }
+      .results__section .result__expl p {
+        line-height: 150%;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-top: auto;
+        margin-bottom: 0; }
+        .results__section .result__expl p span.recommendation {
+          color: white; }
+        .results__section .result__expl p span.range {
+          line-height: 150%;
+          font-weight: 600;
+          font-size: 16px;
+          color: #FFFFFF; }
+
+  .what__to__do {
+    background-image: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
+    padding: 56px 28px 56px 19px; }
+    .what__to__do .do__chunk {
+      display: flex;
+      gap: 40px; }
+      .what__to__do .do__chunk .do__icon {
+        display: flex;
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 0;
+        align-self: center;
+        justify-self: center; } }
 /* LARGE BREAKPOINT */
 @media (min-width: 992px) {
-  .md__limitations {
-    display: none; }
+  section.intro {
+    padding: 77px 116px;
+    max-width: 70%; }
+    section.intro .logo {
+      margin-bottom: 100px;
+      height: 4rem;
+      width: 4rem; }
+    section.intro h1 {
+      width: 50%;
+      font-size: 64px; }
+    section.intro p {
+      width: 40%;
+      margin-bottom: 150px; }
 
-  /* CURVED LINE RIGHT */
-  .line__container {
-    display: flex;
-    justify-content: center; }
+  section.calculator {
+    margin: auto;
+    max-width: 30%;
+    max-height: 564px; }
 
-  .curved__line__right {
-    height: 60%;
-    width: auto; } }
+  .what__results__mean {
+    padding: 0;
+    margin-bottom: 3rem; }
+    .what__results__mean .means {
+      display: flex; }
+      .what__results__mean .means .result__means h3 {
+        line-height: 110%;
+        font-weight: 600;
+        font-size: 32px; }
+      .what__results__mean .means .result__means p {
+        line-height: 150%;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

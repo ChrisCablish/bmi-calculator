@@ -71,8 +71,8 @@ p {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
     min-height: 100vh;
     max-width: 100%;
     
@@ -126,6 +126,7 @@ section.intro {
 
 
 section.calculator {
+    
     width: auto;
     padding: 24px;
     margin: 0 24px 0 24px;
@@ -188,7 +189,6 @@ section.calculator {
     }
 
 }
-
 
 //results
 .results__section {
@@ -305,11 +305,10 @@ section.calculator {
     }
 }
 
-
-
 //-------------what to do------------
 
 .what__to__do {
+    
     background-image: $slight__gradient;
     padding: 56px 28px 56px 19px;
 
@@ -360,121 +359,175 @@ section.calculator {
 
     }
 
-
 } 
 
-//----------limitations of bmi----------
-
-
-.lgsm__limitations{
-    
-}
-
-
-.limit__col {
-    border: 1px solid black;
-}
-
-// limitations icons
-
-.limit__factor {
-    box-shadow: $box__shadow;
-}
-
-.limit__col h4 {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: 32px;
-}
-
-.limit__col p {
-    line-height: map-get($bodyM, line-height);
-    font-weight: map-get($bodyM, font-weight);
-    font-size: map-get($bodyM, font-size);
-}
-
-.head__and__icon h5 {
-    line-height: map-get($heading, line-height);
-    font-weight: map-get($heading, font-weight);
-    font-size: map-get($heading-s, font-size);
-}
-
-.limit__icon {
-    height: 2rem;
-    width: 2rem;
-}
-
-.gender__icon {
-    background-image: url(/assets/images/icon-gender.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.age__icon {
-    background-image: url(/assets/images/icon-age.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.muscle__icon {
-    background-image: url(/assets/images/icon-muscle.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.pregnancy__icon {
-    background-image: url(/assets/images/icon-pregnancy.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.race__icon {
-    background-image: url(/assets/images/icon-race.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
-.line__container {
-    display: none;  
-}
-
-.md__limitations {
-    display: none;
-}
 
 
 /* MEDIUM BREAKPOINT */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .lgsm__limitations {
-        display: none;
+
+    //welcome
+    .welcome__div {
+        background-color: $blue;
+        padding: 32px;
+        border-radius: 1.5rem;
+        border-bottom-right-radius: 5rem;
+        border-top-right-radius: 5rem;
     }
 
-    .md__limitations {
-        display: block;
+    //results
+    .results__section {
+        background-color: $blue;
+        padding: 32px;
+        border-radius: 1.5rem;
+        border-bottom-right-radius: 5rem;
+        border-top-right-radius: 5rem;
+
+        .result__expl{
+            display: flex;
+            align-items: center;
+
+            p {
+                line-height: map-get($bodyS, line-height);
+                font-weight: map-get($bodyS, font-weight);
+                font-size: map-get($bodyS, font-size);
+                color: $white;
+                margin-top: auto;
+                margin-bottom: 0;
+
+                span.recommendation {
+                    color: white;
+                }
+
+                span.range {
+                    line-height: map-get($bodyMBold, line-height);
+                    font-weight: map-get($bodyMBold, font-weight);
+                    font-size: map-get($bodyMBold, font-size);
+                    color: $white;
+                }
+            }
+        }
     }
 
-  }
+    //what to do
+
+    .what__to__do {
+    
+        background-image: $slight__gradient;
+        padding: 56px 28px 56px 19px;
+        
+        
+        .do__chunk {
+
+            display: flex;
+            gap: 40px;
+        
+            //icons
+            .do__icon {
+                display: flex;
+                height: 4rem;
+                width: 4rem;
+                margin-bottom: 0;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+
+}
+   
+
   
 
 /* LARGE BREAKPOINT */
 
 @media (min-width: 992px) {
 
-    .md__limitations {
-        display: none;
+    section.top {
+        // position: relative;
     }
 
-    /* CURVED LINE RIGHT */
-    .line__container {
-        display: flex;
-        justify-content: center;
+    section.intro {
+        // align-items: flex-start;
+        padding: 77px 116px;
+        max-width: 70%;
+        // margin-left: 0;
+        // justify-content: flex-start;
+        // 
+    
+        
+        .logo {
+            margin-bottom: 100px;
+            height: 4rem;
+            width: 4rem;
+        }
+
+        h1 {
+            width: 50%;
+            // text-align: left;
+            font-size: 64px;
+            // margin-bottom: 35px;
+            
+        }
+
+        p {
+            // text-align: left;
+            width: 40%;
+            margin-bottom: 150px;
+        }
     }
 
-    .curved__line__right {
-        height: 60%;
-        width: auto;
+    section.calculator {
+        margin: auto;
+        max-width: 30%;
+        max-height: 564px;
+        
     }
+
+    //results mean
+
+    .what__results__mean {
+        padding: 0;
+        margin-bottom: 3rem;
+
+        .man__eating {
+            // background-image: url(/assets/images/image-man-eating.webp);
+            // background-size: contain;
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // height: 375px;
+            // min-width: 100%;
+        }
+
+        .means {
+            display: flex;
+
+
+            .result__means {
+                // padding: 0;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: space-around
+
+                h3 {
+                    line-height: map-get($heading, line-height);
+                    font-weight: map-get($heading, font-weight);
+                    font-size: 32px;
+                }
+
+                p {
+                    line-height: map-get($bodyM, line-height);
+                    font-weight: map-get($bodyM, font-weight);
+                    font-size: map-get($bodyM, font-size);
+                    margin: 0;
+                }
+            }
+        }   
+    }
+
+
+
   }
   
